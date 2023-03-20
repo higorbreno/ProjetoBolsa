@@ -10,7 +10,7 @@ class Equipamento(models.Model):
         ordering = ['created']
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 class Mes(models.Model):
     created = models.DateField(auto_now_add=True)
